@@ -1,0 +1,12 @@
+fun main(){
+    print("Enter your age: ")
+    try {
+        val age = readLine()!!.toInt()
+        if (age > 18)
+    print("Wlcome! ")
+        else
+       print ("you are not old enough :(")
+    }catch (e: Exception){
+        print("you didn't enter anything !")
+    }
+}
