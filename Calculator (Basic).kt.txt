@@ -1,0 +1,25 @@
+import kotlin.random.Random
+
+fun main() {
+    try {
+while (true){
+        //Ask the user to enter two numbers
+        print("please Enter first Number: ")
+        val firstNum = readLine()!!.toInt()
+        print("please Enter second Number: ")
+        val secondNum = readLine()!!.toInt()
+      val result =  add(firstNum,secondNum)
+        println("$firstNum + $secondNum = $result")
+print("Would you like to add more numbers? (Y/N)  ")
+val userAnswer = readLine().toString()
+if (userAnswer == "Y" || userAnswer == "y"){ }
+else if (userAnswer == "N" || userAnswer == "n")
+break
+}
+    } catch (e: Exception) {
+        println("please enter only numbers")
+    }
+}
+fun add(num1: Int, num2: Int): Int{
+    return num1 + num2
+}
