@@ -1,0 +1,22 @@
+fun main() {
+ val countryAndCapital = arrayListOf<ArrayList<String>>()
+
+for (i in 0..2){
+
+ print("Enter Country : ")
+ val city = readLine()!!
+ print("now enter the capital city : ")
+ val country = readLine()!!
+ countryAndCapital.add(arrayListOf(country,city))
+}
+ for (i in countryAndCapital.indices)
+ {
+  var j = 0
+  while (j < countryAndCapital[i]?.size)
+  {
+   println(" ${countryAndCapital[i][j] } ")
+   j++
+  }
+  println()
+ }
+}
