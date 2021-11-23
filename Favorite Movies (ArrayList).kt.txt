@@ -1,0 +1,18 @@
+fun main() {
+    val movies = arrayListOf<String>()
+    println("Enter top 5 movies ... ")
+    while (true) {
+        var i = 1
+        println(">>-  ")
+        val movie = readLine()!!
+        movies.add(movie)
+        if (movies.size >= 3) {
+            print("Would you like to continue? (Y/N)  ")
+            val userAnswer = readLine().toString()
+            if (userAnswer == "Y" || userAnswer == "y") {
+            } else if (userAnswer == "N" || userAnswer == "n")
+                break
+        }
+    }
+    print("Movies: $movies")
+}
