@@ -1,0 +1,24 @@
+import kotlin.random.Random
+
+fun main() {
+    val num = Random.nextInt(10)
+
+    try {
+        print("please Enter first Number: ")
+        val firstNum = readLine()!!.toInt()
+        print("please Enter second Number: ")
+        val secondNum = readLine()!!.toInt()
+val sum = firstNum * num + secondNum
+        println("$firstNum * X + $secondNum = $sum")
+    //    UserNumber1 * RandomNumber + UserNumber2
+        print("what is x ? >> ")
+        val guessedNum = readLine()!!.toInt()
+            if (guessedNum == num)
+                println("You got it!")
+        else
+         println("Wrong guess :( . The answer was $num.")
+    }catch (e: Exception){
+        println("please enter only numbers")
+    }
+    print("Game is Over")
+}
