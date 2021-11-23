@@ -1,0 +1,28 @@
+import kotlin.random.Random
+
+fun main() {
+    val num = Random.nextInt(10)
+
+
+    println("Write 'quit' to out of the Game  ")
+
+    print("Guess a number between 0 and 10: ")
+    try {
+        var count = 1
+        while (count < 4){
+            count ++
+            val guessedNum = readLine()!!
+            if (guessedNum == "quit")
+                break
+            else if(guessedNum!!.toInt() == num)
+                println("You got it!")
+        else
+                println("Try again")
+        }
+        println("Wrong guess :( . The answer was $num.")
+
+    }catch (e: Exception){
+        println("please enter only numbers")
+    }
+    print("Game is Over")
+}
