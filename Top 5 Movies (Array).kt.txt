@@ -1,0 +1,11 @@
+fun main(){
+    val movies = arrayOf("", "", "", "", "")
+
+    for(i in 0..4){
+        println("Enter top 5 movies:  ")
+        movies[i] = readLine()!!
+    }
+    for(i in movies){
+        println(i)
+    }
+}
