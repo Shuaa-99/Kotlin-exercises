@@ -1,0 +1,13 @@
+fun main() {
+ val country = listOf("Kuwait","Saudi Arabia ", "Egypt")
+ val capitalCity = arrayListOf<String>()
+for (i in 0..2){
+
+ print("Enter Capital of ${country[i]} ")
+ val city = readLine()!!
+ capitalCity.add(city)
+}
+for (i in 0..2){
+ println("capital city of ${country[i]} is ${capitalCity[i]}")
+}
+}
